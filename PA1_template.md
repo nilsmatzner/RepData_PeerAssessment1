@@ -34,7 +34,7 @@ The following code sums up the steps by colomn *date* using the
     names(dt.steps)[1] <- "daysteps"
     hist(dt.steps$daysteps, main = "Total number of steps taken each day", xlab = "Steps per day")
 
-![](CourseProject1_NilsMatzner-html_files/figure-markdown_strict/unnamed-chunk-4-1.png)
+![](figure-markdown_strict/unnamed-chunk-4-1.png)
 
 3. Mean and median number of steps taken each day
 -------------------------------------------------
@@ -56,7 +56,7 @@ the next section.
     names(dt.int)[2] <- "mean steps"
     plot(dt.int, type = "l", main = "Maximum number of steps of average day")
 
-![](CourseProject1_NilsMatzner-html_files/figure-markdown_strict/unnamed-chunk-6-1.png)
+![](figure-markdown_strict/unnamed-chunk-6-1.png)
 
 5. The 5-minute interval that, on average, contains the maximum number of steps
 -------------------------------------------------------------------------------
@@ -70,7 +70,7 @@ abolute maximum of steps.
     points(xpos, ypos, pch = 16, col = "Red")
     text(xpos, ypos, paste0("max at ", xpos, " interval"), pos = 4)
 
-![](CourseProject1_NilsMatzner-html_files/figure-markdown_strict/unnamed-chunk-7-1.png)
+![](figure-markdown_strict/unnamed-chunk-7-1.png)
 
 6. Code to describe and show a strategy for imputing missing data
 -----------------------------------------------------------------
@@ -99,7 +99,7 @@ values.
     names(dtfill.steps)[1] <- "daysteps"
     hist(dtfill.steps$daysteps, main = "Total number of steps taken each day (incl. missing values)", xlab = "Steps per day")
 
-![](CourseProject1_NilsMatzner-html_files/figure-markdown_strict/unnamed-chunk-10-1.png)
+![](figure-markdown_strict/unnamed-chunk-10-1.png)
 
 The data filled with NA values is used to calculate mean and median
 again. Means and medians of normal and filled data are compared.
@@ -133,7 +133,7 @@ plot (using `ggplot2`, which has been loaded above).
     ggplot(dtweek, aes(interval, `mean steps`, color = week)) +
           geom_line(aes(group = week), size = 1.25, alpha = 0.75)
 
-![](CourseProject1_NilsMatzner-html_files/figure-markdown_strict/unnamed-chunk-12-1.png)
+![](figure-markdown_strict/unnamed-chunk-12-1.png)
 
 9. All of the R code needed to reproduce the results (numbers, plots, etc.) in the report
 -----------------------------------------------------------------------------------------
